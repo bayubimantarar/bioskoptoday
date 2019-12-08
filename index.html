@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind</title>
+  <link
+    rel="stylesheet"
+    href="assets/css/app.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+  />
+</head>
+<body class="bg-white static antialised">
+  <nav class="flex w-full justify-between bg-white p-1 items-center border-solid border-b border-gray-300 font-sans">
+    <div class="logo">
+      <img
+        src="src/img/logo.png"
+        alt="Logo Bioskoptoday"
+        class="h-10 md:h-14 px-2"
+      />
+    </div>
+    <div class="menu block hidden md:flex uppercase font-bold">
+      <a
+        class="block text-gray-700 hover:text-black px-2 py-2"
+        href=""
+      >
+        Blog
+      </a>
+      <a
+        class="block text-gray-700 hover:text-black px-2 py-2"
+        href=""
+      >
+        Popular Film
+      </a>
+      <a
+        class="block text-gray-700 hover:text-black px-2 py-2"
+        href=""
+      >
+        Release Film
+      </a>
+      <a
+        class="block text-gray-700 hover:text-black px-2 py-2"
+        href=""
+      >
+        Review Film
+      </a>
+    </div>
+  </nav>
+  <div class="isometric h-64 md:h-screen" style="background: linear-gradient(to bottom,#b299c8 0%,#219bc5 100%)">
+    <div class="banner p-6 md:absolute md:bottom-0 md:right-0 md:p-12 font-sans leading-relaxed">
+      <h1 class="text-xl md:text-right text-white md:text-4xl">
+        Film released in December 2019
+      </h1>
+      <h3 class="text-sm md:text-right text-gray-400">
+        Bioskop schedule for today.
+        Update, accurate information film.
+      </h3>
+    </div>
+  </div>
+  <main>
+    <div class="container mx-auto border-b-2">
+      <div class="latest-film-news my-5 mx-4">
+        <div class="sub-title mb-4">
+          <h3 class="text-xl text-gray-900 uppercase border-b border-red-300">
+            Latest Film News
+          </h3>
+          <hr />
+        </div>
+      </div>
+      <div class="content block md:flex font-sans leading-relaxed">
+        <div class="block my-4 mx-4 md:w-1/3">
+          <img src="https://www.bioskoptoday.com/wp-content/uploads/2019/08/spider-man-tinggalkan-mcu.jpg" alt="" />
+          <div class="title mb-2">
+            <h3 class="text-xl text-blue-500 hover:text-blue-800">
+              <a
+                href="#"
+              >
+                Disney-Sony Broke Share, Spider-Man Leave the MCU
+              </a>
+            </h3>
+          </div>
+          <div class="information my-2">
+            <small class="text-gray-500">
+              29 November 2019 | No Comments
+            </small>
+          </div>
+          <div class="sub-title my-2">
+            Shocking news came from the Superhero film world. After quite a long time collaborating and launching successful films together, Disney and Sony reportedly ended an agreement that had allowed Spider-Man to act at the MCU.
+          </div>
+        </div>
+        <div class="block my-4 mx-4 md:w-1/3">
+          <img src="https://www.bioskoptoday.com/wp-content/uploads/2019/09/trailer-knives-out.jpg" alt="" />
+          <div class="title my-2">
+            <h3 class="text-xl text-blue-500 hover:text-blue-800">
+              <a
+                href="#"
+              >
+                Daniel Craig meets Chris Evans in the Knives Out Trailer
+              </a>
+            </h3>
+          </div>
+          <div class="information my-2">
+            <small class="text-gray-500">
+              27 November 2019 | No Comments
+            </small>
+          </div>
+          <div class="sub-title my-2">
+            What would happen if the actor James Bond met the cast of Captain America? Rian Johnson's film can present the answer. Bergenre crime drama that is full of elements of black comedy, Knives Out is ready to enliven the Thanksgiving holiday this year with a murder mystery that is full of intrigue.
+          </div>
+        </div>
+        <div class="block my-4 mx-4 md:w-1/3">
+          <img src="https://www.bioskoptoday.com/wp-content/uploads/2019/09/proyeksi-box-office-joker.jpg" alt="" />
+          <div class="title my-2">
+            <h3 class="text-xl text-blue-500 hover:text-blue-800">
+              <a
+                href="#"
+              >
+                Joker Projected to Break Venom Box Office Records
+              </a>
+            </h3>
+          </div>
+          <div class="information my-2">
+            <small class="text-gray-500">
+              24 November 2019 | No Comments
+            </small>
+          </div>
+          <div class="sub-title my-2">
+            Audience's high anticipation of the Joker solo film made him digadang able to surpass Venom as the highest weekend Box Office winner in October. This comparison is interesting to look at, because they both favor antihero and are figures from two competing franchises, namely Marvel and DC.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container mx-auto">
+      <div class="disclaimer w-full md:w-1/2 font-sans my-5 mx-4">
+        <p class="text-black font-bold">
+          Disclaimer
+        </p>
+        <p>
+          The cinema movie schedule available on bioskoptoday is quoted from the relevant cinema website every day. Schedules are subject to change without notice.
+        </p>
+      </div>
+      <div class="sitemap w-full font-sans my-5 mx-2">
+        <div class="sitemap-menu block md:flex">
+          <a
+            href=""
+            class="block text-blue-500 hover:text-blue-800 md:border-r md:border-black px-2"
+          >
+            Home
+          </a>
+          <a
+            href=""
+            class="block text-blue-500 hover:text-blue-800 md:border-r md:border-black px-2"
+          >
+            Blog
+          </a>
+          <a
+            href=""
+            class="block text-blue-500 hover:text-blue-800 md:border-r md:border-black px-2"
+          >
+            Terms of Use
+          </a>
+          <a
+            href=""
+            class="block text-blue-500 hover:text-blue-800 md:border-r md:border-black px-2"
+          >
+            Privary Policy
+          </a>
+          <a
+            href=""
+            class="block text-blue-500 hover:text-blue-800 md:border-r md:border-black px-2"
+          >
+            Contact Us
+          </a>
+          <a
+            href=""
+            class="block text-blue-500 hover:text-blue-800 px-2"
+          >
+            Advertising & Promotion
+          </a>
+        </div>
+        <div class="social-media flex justify-center my-5 mx-2">
+          <span class="mx-2"><i class="fa fa-facebook-square"></i></span>
+          <span class="mx-2"><i class="fa fa-twitter-square"></i></span>
+          <span class="mx-2"><i class="fa fa-instagram"></i></span>
+        </div>
+        <div class="copyright flex justify-center my-5 mx-2">
+          <small class="text-xs md:text-sm">
+            &copy; bioskoptoday - Developed by
+            <a href="https://bimantara.web.id" class="text-blue-500 hover:text-blue-800">Bayu Bimantara</a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

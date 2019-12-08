@@ -31,6 +31,14 @@
         class="h-10 md:h-14 px-2"
       />
     </div>
+    <div class="button ml-auto mr-2 mt-2 md:hidden">
+      <button id="sidebar-open">
+        <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+      </button>
+      <button id="sidebar-close">
+        <svg class="fill-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"></path></svg>
+      </button>
+    </div>
     <div class="menu block hidden md:flex uppercase font-bold">
       <a
         class="block text-gray-700 hover:text-black px-2 py-2"
@@ -58,6 +66,14 @@
       </a>
     </div>
   </nav>
+  <div class="sidebar bg-white h-50 md:hidden" id="sidebar">
+    <div class="sidebar-menu p-3 uppercase font-bold">
+      <a class="block mb-3 text-gray-700 hover:text-black" href="">Blog</a>
+      <a class="block mb-3 text-gray-700 hover:text-black" href="">Popular Film</a>
+      <a class="block mb-3 text-gray-700 hover:text-black" href="">Release Film</a>
+      <a class="block mb-3 text-gray-700 hover:text-black" href="">Review Film</a>
+    </div>
+  </div>
   <div class="isometric h-64 md:h-screen" style="background: linear-gradient(to bottom,#b299c8 0%,#219bc5 100%)">
     <div class="banner p-6 md:absolute md:bottom-0 md:right-0 md:p-12 font-sans leading-relaxed">
       <h1 class="text-xl md:text-right text-white md:text-4xl">
@@ -199,12 +215,33 @@
         </div>
         <div class="copyright flex justify-center my-5 mx-2">
           <small class="text-xs md:text-sm">
-            &copy; bioskoptoday - Developed by
+            &copy; Developed by
             <a href="https://bimantara.web.id" class="text-blue-500 hover:text-blue-800">Bayu Bimantara</a>
           </small>
         </div>
       </div>
     </div>
   </footer>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+  ></script>
+  <script>
+    $(document).ready(function(){
+      $('#sidebar').hide();
+      $('#sidebar-close').hide();
+
+      $('#sidebar-open').click(function(){
+        $(this).hide();
+        $('#sidebar-close').show();
+        $('#sidebar').show();
+      });
+
+      $('#sidebar-close').click(function(){
+        $(this).hide();
+        $('#sidebar-open').show();
+        $('#sidebar').hide();
+      });
+    });
+  </script>
 </body>
 </html>

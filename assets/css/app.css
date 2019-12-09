@@ -601,6 +601,10 @@ video {
 
 .container {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 640px) {
@@ -625,6 +629,11 @@ video {
   .container {
     max-width: 1280px;
   }
+}
+
+.isometric {
+  background: -webkit-gradient(linear,left top, left bottom,from(#b299c8),to(#219bc5));
+  background: linear-gradient(to bottom,#b299c8 0%,#219bc5 100%);
 }
 
 .sr-only {
